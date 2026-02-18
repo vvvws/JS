@@ -8,18 +8,13 @@ console.log("--- 1.2 (три числа через два пробела) ---");
 
 
  console.log("--- 1.3 (два числа одно под другим) ---");
-
      console.log("1-3:"); console.log(50); console.log(10);
 
-    
-
     console.log("--- 1.4 (три числа одно под другим) ---");
-
     console.log("1-4:"); console.log(5); console.log(10); console.log(21);
 
 
     console.log("--- 1.5 (вывод 1 и 2 на отдельных строках) ---");
-
     console.log("1-5:"); console.log(1); console.log(2);
 
     console.log("--- 1.6 (число π с тремя знаками) ---");
@@ -28,7 +23,6 @@ console.log("--- 1.2 (три числа через два пробела) ---");
     
 
     console.log("--- 1.7 (число e с точностью до десятых) ---");
-
     let pi7 = 2.71828;
     console.log("1-7:", pi7.toFixed(1));
 
@@ -41,60 +35,56 @@ console.log("--- 1.2 (три числа через два пробела) ---");
     let num9 = 95;
     console.log("9-1:", num9, "– вот какое число ты ввел");
 
-
-// console.log("--- 1.10 (запрос имени и повтор) ---");
+console.log("--- 1.10 (запрос имени и повтор) ---");
 // // 1. Запрос Имени
-// let firstName = "";
-// while (!firstName || firstName.trim() === "") {
-//     firstName = prompt("Введите ваше имя:");
-// }
-// // 2. Запрос Фамилии
-// let lastName = "";
-// while (!lastName || lastName.trim() === "") {
-//     lastName = prompt("Введите вашу фамилию:");
-// }
-// // 3. Запрос Возраста (с проверкой на число)
-// let age;
-// while (true) {
-//     let input = prompt("Введите ваш возраст:");
-//     age = Number(input);
-//     if (input && !isNaN(age) && age > 0) break;
-//     alert("Пожалуйста, введите корректное число для возраста.");
-// }
-// // 4. Запрос Города
-// let city10 = "";
-// while (!city10 || city10.trim() === "") {
-//     city10 = prompt("Введите ваш город:");
-// }
-// // Вывод результатов
-// console.log("10-1: Имя -", firstName);
-// console.log("10-2: Фамилия -",  lastName);
-// console.log("10-3: Город -", city10);
-// console.log("10-4: Приветствие -", `Привет, ${firstName}! Тебе уже ${age}.`);
+let firstName = "";
+while (!firstName || firstName.trim() === "") {
+firstName = prompt("Введите ваше имя:");
+}
+// 2. Запрос Фамилии
+let lastName = "";
+while (!lastName || lastName.trim() === "") {
+lastName = prompt("Введите вашу фамилию:");
+}
+// 3. Запрос Возраста (с проверкой на число)
+let age;
+while (true) {
+    let input = prompt("Введите ваш возраст:");
+    age = Number(input);
+    if (input && !isNaN(age) && age > 0) break;
+    alert("Пожалуйста, введите корректное число для возраста.");
+}
+// 4. Запрос Города
+let city10 = "";
+while (!city10 || city10.trim() === "") {
+    city10 = prompt("Введите ваш город:");
+}
+// Вывод результатов
+console.log("10-1: Имя -", firstName);
+console.log("10-2: Фамилия -",  lastName);
+console.log("10-3: Город -", city10);
+console.log("10-4: Приветствие -", `Привет, ${firstName}! Тебе уже ${age}.`);
+let full10 = `${firstName} ${lastName}`;
+console.log("10-5: Полное имя -", full10);
+console.log("10-6: В верхнем регистре -", full10.toUpperCase());
 
-// let full10 = `${firstName} ${lastName}`;
-// console.log("10-5: Полное имя -", full10);
-// console.log("10-6: В верхнем регистре -", full10.toUpperCase());
-
-// console.log("--- 1.11 (название команды + фраза) ---");
-// // Запрашиваем название команды
-// let team11 = prompt("Введите название вашей любимой команды:", "Спартак");
+console.log("--- 1.11 (название команды + фраза) ---");
+//Запрашиваем название команды
+let team11 = prompt("Введите название вашей любимой команды:", "Спартак");
 // // Если пользователь нажал "Отмена", задаем значение по умолчанию
-// if (!team11) {
-//     team11 = "Ваша команда";
-// }
+if (!team11) {
+    team11 = "Ваша команда";
+}
 
 // // Выводим результат
-// console.log("11-1:", `${team11} – лучшая команда!`);
+console.log("11-1:", `${team11} – лучшая команда!`);
 
-//     console.log("--- 1.12 (приветствие с именем) ---");
-//     let firstName = "";
-// while (!firstName || firstName.trim() === "") {
-//     firstName = prompt("Введите ваше имя:");
-// }
-//    console.log("12-1: Здравствуйте -", firstName);
- 
-
+console.log("--- 1.12 (приветствие с именем) ---");
+let firstName = "";
+while (!firstName || firstName.trim() === "") {
+    firstName = prompt("Введите ваше имя:");
+}
+console.log("12-1: Здравствуйте -", firstName);
     console.log("--- 1.13 (следующее и предыдущее число) ---");
     let num13 = 195;
     console.log("13-1:", "Для числа", num13, "следующее –", num13+1, "предыдущее –", num13-1);
